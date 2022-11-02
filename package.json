@@ -61,11 +61,21 @@
 					"type": "string",
 					"default": "buf",
 					"description": "Path to the buf binary"
+				},
+				"buf.linting.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Lints code on file save using buf lint."
+				},
+				"buf.linting.lintOnSave": {
+					"type": "boolean",
+					"default": true,
+					"description": "Lints code on file save using buf lint."
 				}
 			}
 		},
 		"configurationDefaults": {
-			"[proto]": {
+			"[proto3]": {
 				"editor.formatOnSave": true
 			}
 		},
@@ -80,7 +90,7 @@
 				]
 			},
 			{
-				"id": "proto",
+				"id": "proto3",
 				"extensions": [
 					".proto"
 				],
